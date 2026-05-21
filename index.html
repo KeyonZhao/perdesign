@@ -644,6 +644,16 @@
                 <div class="section-title">四、品牌信息</div>
                 
                 <div class="field">
+                    <label>公司/品牌名称<span class="required">*</span></label>
+                    <input type="text" name="company_name" placeholder="请填写公司或品牌名称">
+                </div>
+                
+                <div class="field">
+                    <label>公司的使命、愿景、价值观</label>
+                    <textarea name="company_mvv" placeholder="请描述公司的使命、愿景、价值观（如有）"></textarea>
+                </div>
+                
+                <div class="field">
                     <label>你希望用户看到这个品牌/产品时，第一感觉是什么？<span class="required">*</span></label>
                     <div class="checkbox-group" id="brand_impression">
                         <label class="checkbox-option" data-value="专业">
@@ -1058,6 +1068,8 @@
 四、品牌信息
 - 希望用户第一感觉是什么：${data.brand_impression || ''}
 - 品牌或企业最核心的优势：${data.company_advantage || ''}
+- 公司/品牌名称：${data.company_name || ''}
+- 公司的使命、愿景、价值观：${data.company_mvv || ''}
 - 你认为客户最终选择你们产品的核心原因是什么：${data.choose_reason || ''}
 - 未来1-3年，希望产品或品牌向什么方向发展：${data.future_direction || ''}
 
